@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+`   </head>
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+          padding: 20px;
+        }
+        .container {
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          max-width: 800px;
+          margin: 0 auto;
+        }
+        a {
+            padding-left: 15px;
+        }
+        label{
+            padding-left: 15px;
+            padding-top: 10px;
+        }    
+        .registerbtn {  
+            background-color: #4CAF50;  
+            color: white;  
+            padding: 16px 20px;  
+            margin: 8px 0;  
+            border: none;  
+            cursor: pointer;  
+            width: 100%;  
+            opacity: 0.9;  
+        }
+        
+    </style>
+  
+  <body id="top">
+    <div class="container">
+        <a href="../index.html">Home</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./Form.html">Registration Form</a>
+    </div>
+    <div class="container"> 
+      <form>
+        <center>  <h1> Student Registeration Form</h1> </center>
+        <hr><br><br>
+            <label>First Name: </label>
+            <input type="text" name="firstname" placeholder="First name" size="15" maxlength="15" required />
+            <label> Middle Name: </label>   
+            <input type="text" name="middlename" placeholder="Middle name" size="15" required />
+            <label>*Last Name: </label>
+            <input type="text" name="lastname" placeholder="Last Name" size="15" maxlength="15" required />
+            <br /><br />
+            <label>Father's Name: </label>
+                <input type="text" name="fathername" size="35" maxlength="35" required />
+            <br><br>
+            <label>Date of Birth: </label><input type="date" name="dob" id="dob" required/>
+            <br /><br />
+            <label>Gender: </label>
+            <input id="male_radio" type="radio" name="gender" value="male" checked />
+            <label for="male_radio">Male</label>
+            <input id="female_radio" type="radio" name="gender" value="female" />
+            <label for="female_radio">Female</label>
+            <br /><br />
+            <label>Course : </label>   
+                <select>
+                <option value="Course">Course</option>  
+                <option value="BCA">BCA</option>  
+                <option value="BBA">BBA</option>  
+                <option value="B.Tech">B.Tech</option>  
+                <option value="MBA">MBA</option>  
+                <option value="MCA">MCA</option>  
+                <option value="M.Tech">M.Tech</option>  
+                </select>  
+            <br /><br />
+            <label>Phone Number: </label>
+                <input type="text" name="country code" placeholder="Country Code"  value="+92" size="2"/>
+                <input type="tel" name="phonenumber" size="11" maxlength="11" required/></label>
+            <br /><br />
+            <label>Current Address: </label>  
+            <textarea cols="80" rows="1" placeholder="Current Address" value="address" required>  
+            </textarea>  
+            <br /><br />
+            <label>Email: </label>
+                <input type="email" name="email" placeholder="abc@xyz.com" required />
+            <br /><br />
+            <label for="psw"><b>Password</b></label>  
+            <input type="password" placeholder="Enter Password" name="psw" required>  
+            <br /><br />
+            <label for="psw-repeat"><b>Re-type Password</b></label>  
+            <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+            <br /><br />
+                <label>Upload image: </label>
+                <input type="file" name="user_image" />
+            <br /><br />
+            <button type="submit" class="registerbtn">Register</button>
+    </form>
+    <br /><br />
+    <a href="#top">go to top</a>
+    </div>
+  </body>
+</html>
